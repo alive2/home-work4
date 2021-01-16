@@ -92,14 +92,14 @@ root->current = current;
 else{
  if(root->current->word){
  root->word[p]='\0';
- printf("%s\t%ld\n",root->word,root->current->count);
+ printf("%s %ld\n",root->word,root->current->count);
  }
  --p;
  return;
  }
  if(root->current->word){
  root->word[p]='\0';
- printf("%s\t%ld\n",root->word,root->current->count);
+ printf("%s %ld\n",root->word,root->current->count);
  }
  --p;
 }
@@ -111,7 +111,7 @@ node* current;
 root->word[p++]=root->current->letter;
 if (root->current->word){
 root->word[p]='\0';
-printf("%s\t%ld\n",root->word,root->current->count);
+printf("%s %ld\n",root->word,root->current->count);
 }
  if (root->current->kid){
  for(int i=0; i<allKids; ++i){
